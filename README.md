@@ -1,2 +1,3 @@
 # terraform
-All Things Terraform
+
+Projects for my Terraform journey!
