@@ -8,7 +8,7 @@ resource "aws_instance" "server" {
     Name = "TestWebServer2"
   }
 
-  user_data = <<EOF
+  user_data = <<-EOF
         #!/bin/bash
         sudo apt update
         sudo apt install nginx -y
@@ -16,7 +16,7 @@ resource "aws_instance" "server" {
         systemctl start nginx
         echo "NGINX!" > ~/doc.txt
 
-        
+
     EOF
 }
 
